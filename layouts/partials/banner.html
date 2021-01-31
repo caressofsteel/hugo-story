@@ -1,14 +1,14 @@
-				<!-- Banner -->
-                <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-                    <div class="content">
-                        {{ with .Site.Title }}<h1>{{.}}</h1>{{end}}
-                        {{ with .Site.Params.subtitle }}<p class="major">{{.}} released for free under the <a target="_blank" href="https://creativecommons.org/licenses/by/3.0/">Creative Commons</a>.</p>{{end}}
-                        <p>This is a <strong>Banner</strong> element, and it's generally used as an introduction or opening statement. You can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-banner">details</a>).</p>
-                        <ul class="actions stacked">
-                            <li><a href="#first" class="button large wide smooth-scroll-middle">Get Started</a></li>
-                        </ul>
-                    </div>
-                    <div class="image">
-                        {{ with .Site.Params.logo }}<img src="{{.}}" alt="Hugo Story" />{{end}}
-                    </div>
-                </section>
+<!-- Banner -->
+<section class="banner {{ .style }}">
+    <div class="content">
+        {{ with .title }}<h1>{{ . }}</h1>{{ end }}
+        {{ with .subtitle }}<p class="major">{{ . | safeHTML }}</p>{{ end }}
+        {{ with .content }}<p>{{ . | safeHTML }}</p>{{ end }}
+        {{ with .button }}<ul class="actions stacked">
+            <li><a href="{{ .link }}" class="button primary large wide smooth-scroll-middle">{{ .label }}</a></li>
+        </ul>{{ end }}
+    </div>
+    {{ with .image }}<div class="image">
+        <img src="{{.}}" alt="Hugo Story" />
+    </div>{{end}}
+</section>

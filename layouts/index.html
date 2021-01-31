@@ -15,12 +15,12 @@
 		<div id="wrapper" class="divided">
 
 			<!-- Main -->
-			{{ partial "banner" . }}
-			{{ partial "spotlight-01-left" . }}
-			{{ partial "spotlight-02-right" . }}
-			{{ partial "spotlight-03-left" . }}
-			{{ partial "gallery" . }}
-			{{ partial "items" . }}
+			{{ partial "banner" site.Data.banner }}
+			{{ partial "spotlight" site.Data.spotlight1 }}
+			{{ partial "spotlight" site.Data.spotlight2 }}
+			{{ partial "spotlight" site.Data.spotlight3 }}
+			{{ partial "gallery" site.Data.gallery }}
+			{{ partial "items" site.Data.items }}
 			{{ partial "elements" . }}
 			{{ partial "elements_reference" . }}
 			{{ partial "template/footer" . }}
