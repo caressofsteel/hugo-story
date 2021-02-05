@@ -40,10 +40,10 @@ https://caressofsteel.github.io/demos/hugo/hugo-story/
 
 1. Install Hugo
 
-    *This theme uses Hugo Pipes to compile SCSS & Sass so you'll have to use the **extended** version of Hugo.*: <br>
+    *This theme uses Hugo Pipes to compile SCSS & Sass so you'll have to use the **extended** version of Hugo.*<br>
     [Install Hugo (Extended Version)](https://gohugo.io/overview/installing/)
 
-    Further several steps are cited looking back to the official [Hugo Quick Start Guide](https://gohugo.io/getting-started/quick-start/).
+    See the official [Hugo Quick Start Guide](https://gohugo.io/getting-started/quick-start/) for more information.
 
 
 2. Create a new site:
@@ -59,7 +59,7 @@ https://caressofsteel.github.io/demos/hugo/hugo-story/
     git submodule add https://github.com/caressofsteel/hugo-story.git themes/hugo-story
     ```
 
-    Hint: See a note for non-git users [here](https://gohugo.io/getting-started/quick-start/#step-3-add-a-theme).
+    *Hint: See a note for non-git users [here](https://gohugo.io/getting-started/quick-start/#step-3-add-a-theme).*
 
 4. Copy `data` and `config.toml` with overwrite from `themes/exampleSite` to the main directory:
 
@@ -68,9 +68,9 @@ https://caressofsteel.github.io/demos/hugo/hugo-story/
     cp themes/hugo-story/exampleSite/config.toml ./
     ```
 
-    Hint: Using `config.toml` tells Hugo to use the theme and sets some basic theme parameters.
+    *Hint: Using `config.toml` tells Hugo to use the theme and sets some basic theme parameters.*
 
-    Hint: Using `data` provides some default contents for the site.
+    *Hint: Using `data` provides some default contents for the site.*
 
 5. Start Hugo server:
 
