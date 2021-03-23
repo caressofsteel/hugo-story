@@ -56,7 +56,7 @@ git submodule add https://github.com/caressofsteel/hugo-story.git themes/hugo-st
 ### 4. Copy `data` and `config.toml` with overwrite from `exampleSite`
 ```
 cp -r themes/hugo-story/exampleSite/data ./
-cp themes/hugo-story/exampleSite/config.toml/
+cp themes/hugo-story/exampleSite/config.toml ./
 ```
 > _Hint: Using `config.toml` tells Hugo to use the theme and sets some basic theme parameters._
 
