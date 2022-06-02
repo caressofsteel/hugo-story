@@ -49,7 +49,7 @@ hugo new site story-examplesite
 
 ```
 cd story-examplesite
-git submodule add https://github.com/caressofsteel/hugo-story.git themes/hugo-story
+git clone https://github.com/caressofsteel/hugo-story.git themes/hugo-story
 ```
 
 > _Hint: See a note for non-Git users [here](https://gohugo.io/getting-started/quick-start/#step-3-add-a-theme)._
