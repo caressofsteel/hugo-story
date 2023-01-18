@@ -7,7 +7,7 @@
 -->
 <html>
 	
-	{{ partial "template/head" . }}
+	{{ partial "head" . }}
 
 	<body class="is-preload">
 
@@ -18,7 +18,8 @@
 		</div>
 		
 		{{ template "_internal/google_analytics.html" . }}
-		{{ partial "template/scripts" . }}
+		{{ template "_internal/google_analytics_async.html" . }}	
+		{{ partial "scripts" . }}
 
 	</body>
 </html>
