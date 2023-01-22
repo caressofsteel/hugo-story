@@ -1,7 +1,7 @@
 # Hugo Story
 ## A (modular, highly tweakable) responsive one-page theme for Hugo.
 
-![](readme/device-screenshots.png)
+![](images/device-screenshots.png)
 
 Hugo Story is a port of the static HTML template Story by HTML5 UP. It is designed to mirror the look and feel of the original template as closely as possible while incorporating some of the features Hugo has to offer.
 
@@ -58,8 +58,10 @@ git clone https://github.com/caressofsteel/hugo-story.git themes/hugo-story
 ```
 cp -r themes/hugo-story/exampleSite/* ./
 ```
-> _Hint: This sets up the `mystory` website with a copy of the `layouts`, `data`, and `configuration` files outside of the theme folder._
+> _Hint: This sets up the `mystory` example website with a copy of the theme `assets`, `layouts`, `data`, and `configuration` files in the site's root folder and outside of the theme folder._
 
+> _Hint: Theme assets in the site root, `if present`, take precedence over files in the theme folder._
+> 
 ### 5. Start Hugo Server.
 ```
 hugo server
@@ -68,7 +70,7 @@ hugo server
 ```
 http://localhost:1313/
 ```
-Here you'll see the site running on the local Hugo server. You can now make changes to and Hugo will rebuild the site automatically.
+Here you'll see the site running on the local Hugo server. You can now edit the theme and Hugo will rebuild the site when changes are detected.
 
 ### 7. Further steps.
 
