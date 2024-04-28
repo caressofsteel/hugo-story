@@ -2,7 +2,8 @@
 ## Basic Configuration
 ## -----------------------------------------------
 
-theme = "hugo-story"
+title = "Hugo Story"
+copyright = "{year}"
 
 ## -----------------------------------------------
 ## Publish
@@ -19,12 +20,11 @@ publishDir = "public"
 #baseURL = "https://caressofsteel.github.io/demos/hugo/hugo-story/"
 #publishDir = "//centos/sites/hugodev/hugostory/"
 
-
 ## -----------------------------------------------
 ## Hugo Built-in Features
 ## -----------------------------------------------
 
-disableKinds = ["taxonomy", "taxonomyTerm", "section"]
+disableKinds = ["taxonomy", "section"]
 # googleAnalytics = "G-XXXXXXXXXX"
 
 ## -----------------------------------------------
@@ -32,7 +32,18 @@ disableKinds = ["taxonomy", "taxonomyTerm", "section"]
 ## -----------------------------------------------
 
 [Params]
+  description = "A (modular, highly tweakable) responsive one-page theme for Hugo"
+  logo = "images/banner.jpg"
+  favicon = true
 
 [Params.social]
+  github = "https://github.com/caressofsteel/"
+  twitter = "https://twitter.com/caressofsteel_"
+  email = "caressofsteel@protonmail.com"
+  instagram = "https://instagram.com"
+  linkedin = "https://linkedin.com"
+  telegram = "https://telegram.org"
 
 [Params.asset]
+  fontawesome_css = ["css/fontawesome-all.min.css"]
+  fontawesome_js = ["js/fontawesome-all.min.js"]
