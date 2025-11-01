@@ -951,6 +951,152 @@
 
 	}
 
+/* Spotlight (style6) */
+
+.spotlight.style6 {
+	$image-size: 21rem;
+	$content-size: (_size(inner) * 0.75) - (_size(element-margin) * 1.75);
+
+	// @include padding(_size(padding, default), _size(padding, default));
+	@include vendor('align-items', 'center');
+	@include vendor('display', 'flex');
+	@include vendor('flex-direction', 'row-reverse');
+	@include vendor('justify-content', 'center');
+	position: relative;
+	overflow-x: hidden;
+	text-align: left;
+
+	.content {
+		width: $content-size;
+		max-width: 100%;
+	}
+
+	.image {
+		@include vendor('flex-grow', '0');
+		@include vendor('flex-shrink', '0');
+		width: $image-size;
+		height: $image-size;
+		// border-radius: 100%;
+		margin: _size(element-margin) (_size(element-margin) * 1.75) _size(element-margin) 0;
+
+		img {
+			@include vendor('object-fit', 'cover');
+			@include vendor('object-position', 'center');
+			display: block;
+			width: 100%;
+			height: 100%;
+			// border-radius: 100%;
+		}
+	}
+
+	@include breakpoint('<=xlarge') {
+		// @include padding(_size(padding, xlarge), _size(padding, xlarge));
+	}
+
+	@include breakpoint('<=large') {
+		// @include padding(_size(padding, large), _size(padding, large));
+	}
+
+	@include breakpoint('<=medium') {
+		// @include padding(_size(padding, medium) * 1.25, _size(padding, medium));
+
+		.image {
+			width: ($image-size * 0.875);
+			height: ($image-size * 0.875);
+		}
+	}
+
+	@include breakpoint('<=small') {
+		// @include padding(_size(padding, small) * 1.25, _size(padding, small));
+		@include vendor('align-items', 'flex-start');
+
+		.image {
+			width: ($image-size * 0.75);
+			height: ($image-size * 0.75);
+			margin: _size(element-margin) (_size(element-margin) * 1) _size(element-margin) 0;
+		}
+	}
+
+	@include orientation(portrait) {
+		@include vendor('align-items', 'center');
+		@include vendor('flex-direction', 'column-reverse');
+		text-align: center !important;
+
+		.content {
+			width: 34rem;
+			max-width: 100%;
+		}
+
+		.image {
+			margin-right: 0;
+		}
+	}
+
+	// Modifiers.
+
+		// Orientation.
+			&.orient-left {
+				@include vendor('flex-direction', 'row');
+
+				.image {
+					margin: _size(element-margin) 0 _size(element-margin) (_size(element-margin) * 1.75);
+				}
+
+				@include breakpoint('<=small') {
+					.image {
+						margin: _size(element-margin) 0 _size(element-margin) (_size(element-margin) * 1);
+					}
+				}
+
+				@include orientation(portrait) {
+					@include vendor('flex-direction', 'column-reverse');
+
+					.image {
+						margin-left: 0;
+					}
+				}
+			}
+
+			&.orient-right {
+				// ...
+			}
+
+		// Content Alignment.
+			&.content-align-left {
+				// ...
+			}
+
+			&.content-align-center {
+				text-align: center;
+			}
+
+			&.content-align-right {
+				text-align: right;
+			}
+
+		// Image Position.
+			&.image-position-left {
+				.image {
+					img {
+						@include vendor('object-position', 'left');
+					}
+				}
+			}
+
+			&.image-position-center {
+				// ...
+			}
+
+			&.image-position-right {
+				.image {
+					img {
+						@include vendor('object-position', 'right');
+					}
+				}
+			}
+
+}
+
 // Mixin
 
 	@mixin color-spotlight($p: null) {
