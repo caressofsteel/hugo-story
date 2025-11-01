@@ -357,6 +357,10 @@
 					}
 				}
 
+				&.content-align-justify {
+					text-align: justify;
+				}
+
 			// Image Position.
 				&.image-position-left {
 					.image {
@@ -505,6 +509,10 @@
 
 				&.content-align-right {
 					text-align: right;
+				}
+
+				&.content-align-justify {
+					text-align: justify;
 				}
 
 			// Image Position.
@@ -662,6 +670,10 @@
 					text-align: right;
 				}
 
+				&.content-align-justify {
+					text-align: justify;
+				}
+
 			// Image Position.
 				&.image-position-left {
 					.image {
@@ -802,6 +814,10 @@
 				&.content-align-right {
 					text-align: right;
 				}
+		
+				&.content-align-justify {
+					text-align: justify;
+				}
 
 			// Image Position.
 				&.image-position-left {
@@ -904,6 +920,10 @@
 
 				&.content-align-right {
 					text-align: right;
+				}
+
+				&.content-align-justify {
+					text-align: justify;
 				}
 
 			// Image Position.

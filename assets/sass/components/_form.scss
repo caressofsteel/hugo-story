@@ -82,6 +82,8 @@
 	input[type="tel"],
 	input[type="search"],
 	input[type="url"],
+	input[type="date"],
+	input[type="number"],
 	select,
 	textarea {
 		@include vendor('appearance', 'none');
@@ -126,6 +128,8 @@
 	input[type="tel"],
 	input[type="search"],
 	input[type="url"],
+	input[type="date"],
+	input[type="number"],
 	select {
 		height: _size(element-height);
 	}
@@ -222,6 +226,8 @@
 		input[type="tel"],
 		input[type="search"],
 		input[type="url"],
+		input[type="date"],
+		input[type="number"],
 		select,
 		textarea {
 			border-color: _palette($p, border);

@@ -46,6 +46,23 @@
 				@include padding(_size(padding, small) * 1.5, _size(padding, small));
 			}
 		}
+
+	// Content Alignment.
+		&.content-align-left {
+		    // ...
+		}
+
+		&.content-align-center {
+			text-align: center;
+		}
+
+		&.content-align-right {
+			text-align: right;
+		}
+		
+		&.content-align-justify {
+			text-align: justify;
+		}
 	}
 
 /* Wrapper (style2) */
@@ -103,6 +120,23 @@
 			> .inner {
 				@include padding(_size(padding, small), _size(padding, small) * 0.75);
 			}
+		}
+
+	// Content Alignment.
+		&.content-align-left {
+		    // ...
+		}
+
+		&.content-align-center {
+			text-align: center;
+		}
+
+		&.content-align-right {
+			text-align: right;
+		}
+		
+		&.content-align-justify {
+			text-align: justify;
 		}
 	}
 
