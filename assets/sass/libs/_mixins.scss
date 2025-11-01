@@ -22,15 +22,13 @@
 		text-transform: none !important;
 
 		@if ($category == brands) {
-			font-family: 'Font Awesome 5 Brands';
+			font: var(--fa-font-brands);
 		}
 		@elseif ($category == solid) {
-			font-family: 'Font Awesome 5 Pro';
-			font-weight: 900;
+			font: var(--fa-font-solid);
 		}
 		@else {
-			font-family: 'Font Awesome 5 Pro';
-			font-weight: 400;
+			font: var(--fa-font-regular);
 		}
 
 	}

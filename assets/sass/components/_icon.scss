@@ -13,12 +13,15 @@
 		position: relative;
 		text-align: center;
 
+		font: var(--fa-font-regular);
+
 		> .label {
 			display: none;
 		}
 
 		&:before {
 			line-height: inherit;
+			content:var(--fa);
 		}
 
 		&.solid {
@@ -29,7 +32,7 @@
 
 		&.brands {
 			&:before {
-				font-family: 'Font Awesome 5 Brands';
+				font: var(--fa-font-brands);
 			}
 		}
 
