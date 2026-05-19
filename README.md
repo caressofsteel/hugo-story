@@ -89,6 +89,6 @@ This theme was created using the _Story_ template by [HTML5 UP](https://html5up.
 
 ## License
 
-<a rel="license" href="http://creativecommons.org/licenses/by/3.0/" class="license-button"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png"></a>
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/" class="license-button"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a>
 
-This Hugo theme is licensed under the [Creative Commons Attribution 3.0 License](LICENSE).
+This Hugo theme is licensed under the [Creative Commons Attribution 4.0 International License](LICENSE).
